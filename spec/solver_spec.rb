@@ -50,4 +50,15 @@ RSpec.describe Solver do
       expect(solver.reverse(2)).to eql 'Invalid input'
     end
   end
+
+  context 'Testing the fizzbuzz method' do
+    it 'Checks that the fizzbuzz method can receive a value' do
+      mock = double('solver')
+      allow(mock).to receive(:fizzbuzz).with (1)
+
+      solver = Solver.new()
+      solver.fizzbuzz(1)
+    end
+
+  end
 end
