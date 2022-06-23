@@ -40,7 +40,7 @@ RSpec.describe Solver do
       solver.reverse('string')
     end
 
-    it 'Checks if the reverse method return a reverse string word' do
+    it 'Checks if the reverse method returns a reverse string word' do
       solver = Solver.new
       expect(solver.reverse('string')).to eql 'gnirts'
     end
@@ -60,5 +60,9 @@ RSpec.describe Solver do
       solver.fizzbuzz(1)
     end
 
+    it 'Checks if the fizzbuzz method returns fizz when  ' do
+      solver = Solver.new
+      expect(solver.reverse('string')).to eql 'gnirts'
+    end
   end
 end
