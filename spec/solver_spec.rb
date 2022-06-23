@@ -60,9 +60,9 @@ RSpec.describe Solver do
       solver.fizzbuzz(1)
     end
 
-    it 'Checks if the fizzbuzz method returns fizz when  ' do
+    it 'Checks if the fizzbuzz method returns fizz when n is divisible by 3 ' do
       solver = Solver.new
-      expect(solver.reverse('string')).to eql 'gnirts'
+      expect(solver.fizzbuzz('3')).to eql 'fizz'
     end
   end
 end

@@ -14,5 +14,6 @@ class Solver
   end
 
   def fizzbuzz(n)
+    return 'fizz' unless (n % 3 == 0)
   end
 end
