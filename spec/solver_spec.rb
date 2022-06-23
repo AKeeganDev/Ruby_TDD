@@ -14,6 +14,11 @@ RSpec.describe Solver do
       solver.factorial(1)
     end
 
+    it "Checks that the factorial method only works with positive numbers including 0" do
+      solver = Solver.new()
+      expect(solver.factorial(-1)).to eql 'invalid number'
+    end
+
     it "Checks that the factorial method identifies 0 as an argument and returns 1" do
       solver = Solver.new()
       expect(solver.factorial(0)).to eql 1
