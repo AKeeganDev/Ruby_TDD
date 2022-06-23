@@ -9,5 +9,7 @@ class Solver
   end
 
   def reverse(string)
+    return 'Invalid input' unless string.kind_of?(String)
+    string.reverse        
   end
 end
