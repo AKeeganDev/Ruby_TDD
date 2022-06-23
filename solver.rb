@@ -7,4 +7,7 @@ class Solver
     num_array.each{|number| sum += number}
     sum
   end
+
+  def reverse(string)
+  end
 end
