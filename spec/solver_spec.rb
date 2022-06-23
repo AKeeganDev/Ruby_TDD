@@ -39,5 +39,10 @@ RSpec.describe Solver do
       solver = Solver.new()
       solver.reverse('string')
     end
+
+    it 'Checks if the reverse method return a reverse string word' do
+      solver = Solver.new
+      solver.reverse('string').to eql 'gnirts'
+    end
   end
 end
