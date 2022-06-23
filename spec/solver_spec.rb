@@ -24,5 +24,10 @@ RSpec.describe Solver do
       expect(solver.factorial(0)).to eql 1
     end
 
+    it "Checks that the factorial method returns the correct factorial" do
+      solver = Solver.new()
+      expect(solver.factorial(2)).to eql 3
+    end
+
   end
 end
