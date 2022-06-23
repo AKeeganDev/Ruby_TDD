@@ -30,4 +30,14 @@ RSpec.describe Solver do
     end
 
   end
+
+  context 'Testing the reverse method' do
+    it 'Checks that the reverse method can receive a value' do
+      mock = double('solver')
+      allow(mock).to receive(:reverse).with ('string')
+
+      solver = Solver.new()
+      solver.reverse('string')
+    end
+  end
 end
