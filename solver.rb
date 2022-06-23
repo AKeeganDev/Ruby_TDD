@@ -12,4 +12,7 @@ class Solver
     return 'Invalid input' unless string.kind_of?(String)
     string.reverse        
   end
+
+  def fizzbuzz(n)
+  end
 end
