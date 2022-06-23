@@ -42,7 +42,12 @@ RSpec.describe Solver do
 
     it 'Checks if the reverse method return a reverse string word' do
       solver = Solver.new
-      solver.reverse('string').to eql 'gnirts'
+      expect(solver.reverse('string')).to eql 'gnirts'
+    end
+
+    it 'Checks if the input is a string value' do
+      solver = Solver.new
+      expect(solver.reverse(2)).to eql 'Invalid input'
     end
   end
 end
